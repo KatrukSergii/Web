@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AngularTest/AngularTest/obj
+/AngularTest/AngularTest/bin/Debug/netcoreapp2.0
+/AngularTest/.vs
