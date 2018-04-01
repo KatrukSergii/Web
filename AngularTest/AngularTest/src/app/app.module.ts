@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, Http, XHRBackend, RequestOptions } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { MatTabsModule } from '@angular/material';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -18,10 +21,12 @@ import { ContractService } from './core/services/contract.service';
 @NgModule({
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         FormsModule,
         HttpModule,
         routing,
-        HttpClientModule
+        HttpClientModule,
+        MatTabsModule
     ],
     declarations: [
         HomeComponent,
