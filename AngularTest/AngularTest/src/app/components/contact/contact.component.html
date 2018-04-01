@@ -1,1 +1,10 @@
-﻿<div style="border: 1px solid red">contact Component</div>
+﻿<h2>Contacts:</h2>
+<li *ngFor="let contact of contacts">
+    <a routerLink="/detail/{{contact.id}}">
+        <span class="badge">{{contact.firstName}}</span> {{contact.lastName}}
+    </a>
+    <button class="delete" title="delete hero"
+            (click)="delete(hero)">
+        x
+    </button>
+</li>

@@ -12,13 +12,12 @@ import { Contact } from "../../core/models/contact";
 export class ContactComponent implements OnInit
 {
     contacts: Contact[] = [];
-    selectedContact: Contact;
-    constructor(private contactService: ContactService) {
-        this.selectedContact = new Contact();
-        this.selectedContact.code = "testCode";
+    constructor(private contactService: ContactService)
+    {
     }
 
-    ngOnInit(): void {
+    ngOnInit(): void
+    {
         this.contactService.GetContacts().subscribe(response => { this.contacts = response; });
     }
 }
