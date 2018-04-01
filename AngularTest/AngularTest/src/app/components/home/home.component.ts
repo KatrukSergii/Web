@@ -3,19 +3,19 @@
 import { HomeService } from "../../core/services/home.service";
 
 @Component({
-    selector: 'home',
+    selector: 'app-home',
     templateUrl: 'home.component.html'
 })
 
 export class HomeComponent implements OnInit {
 
-    result: any[] = [];        
-
-    constructor(private hserv: HomeService) {
-        this.hserv.GetHomeMessage().subscribe(response => this.result = response);
+    results: any[] = [];
+    constructor(private homeService: HomeService)
+    {
     }
 
     ngOnInit(): void {
+        this.homeService.GetHomeMessage().subscribe(response => { this.results = response; });
     }
 
 }

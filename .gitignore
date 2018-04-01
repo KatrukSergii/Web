@@ -5,3 +5,4 @@
 /AngularTest/AngularTest/obj
 /AngularTest/AngularTest/bin/Debug/netcoreapp2.0
 /AngularTest/.vs
+*.suo

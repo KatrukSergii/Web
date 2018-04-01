@@ -1,0 +1,11 @@
+C:\GitHub\Web\AngularTest\NoSqlRepository\bin\Debug\NoSqlRepository.dll
+C:\GitHub\Web\AngularTest\NoSqlRepository\bin\Debug\NoSqlRepository.pdb
+C:\GitHub\Web\AngularTest\NoSqlRepository\bin\Debug\Models.dll
+C:\GitHub\Web\AngularTest\NoSqlRepository\bin\Debug\Repository.dll
+C:\GitHub\Web\AngularTest\NoSqlRepository\bin\Debug\Models.pdb
+C:\GitHub\Web\AngularTest\NoSqlRepository\bin\Debug\Repository.pdb
+C:\GitHub\Web\AngularTest\NoSqlRepository\obj\Debug\NoSqlRepository.csprojResolveAssemblyReference.cache
+C:\GitHub\Web\AngularTest\NoSqlRepository\obj\Debug\NoSqlRepository.csproj.CoreCompileInputs.cache
+C:\GitHub\Web\AngularTest\NoSqlRepository\obj\Debug\NoSqlRepository.csproj.CopyComplete
+C:\GitHub\Web\AngularTest\NoSqlRepository\obj\Debug\NoSqlRepository.dll
+C:\GitHub\Web\AngularTest\NoSqlRepository\obj\Debug\NoSqlRepository.pdb

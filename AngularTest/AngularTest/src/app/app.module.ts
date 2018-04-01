@@ -7,9 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContractComponent } from './components/contract/contract.component';
 import { routing } from './app.router';
 
 import { HomeService } from "./core/services/home.service";
+import { ContactService } from './core/services/contact.service';
+import { ContractService } from './core/services/contract.service';
 
 @NgModule({
     imports: [
@@ -21,9 +25,15 @@ import { HomeService } from "./core/services/home.service";
     ],
     declarations: [
         HomeComponent,
+        ContractComponent,
+        ContactComponent,
         AppComponent
     ],
-    providers: [HomeService],
+    providers: [
+        HomeService,
+        ContactService, 
+        ContractService
+    ],
     bootstrap: [AppComponent]
  })
 export class AppModule { }
