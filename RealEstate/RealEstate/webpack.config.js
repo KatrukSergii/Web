@@ -27,7 +27,7 @@ module.exports = {
                 test: /\.(css|scss)$/,
                 loaders: ['to-string-loader'].concat(ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: ['css-loader', 'scss-loader']
+                    use: ['css-loader', 'raw-loader']
                 }))
             }
         ]

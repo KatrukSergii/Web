@@ -12,6 +12,14 @@
             Contact first name: {{selectedContact?.firstName}}
             Contact last name: {{selectedContact?.lastName}}
         </mat-tab>
-        <mat-tab label="Notes">Notes</mat-tab>
+        <mat-tab label="Notes">
+            Notes
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="birthDate" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            {{selectedContact?.birthDate}}
+        </mat-tab>
     </mat-tab-group>
 </div>
