@@ -2,6 +2,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var helpers = require('./helpers');
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/main.ts'),
@@ -22,16 +23,29 @@ module.exports = {
             { test: /\.component.ts$/, loaders: 'angular2-template-loader' },
             { test: /\.ts$/, loaders: 'awesome-typescript-loader' },
             { test: /\.html$/, loaders: 'html-loader' },
-            { test: /\.css$/, loaders: 'css-loader' },
-            { test: /\.css$/, loaders: ExtractTextPlugin.extract({ fallback: "style-loader", use: "css-loader" }) }
+            {
+                test: /\.(css|scss)$/,
+                loaders: ['to-string-loader'].concat(ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ['css-loader', 'scss-loader']
+                }))
+            }
         ]
     },
     resolve: {
-        extensions: ['*', '.js', '.ts', '.html', '.css']
+        extensions: ['*', '.js', '.ts', '.html', '.css', '.scss']
     },
     plugins: [
+        new webpack.LoaderOptionsPlugin({
+            vue: {
+                loaders: {
+                    scss: 'style!css!sass'
+                }
+            }
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
+        }),
+        new ExtractTextPlugin('./src/styles.css')
     ]
 };

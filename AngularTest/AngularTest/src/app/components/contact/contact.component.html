@@ -1,17 +1,16 @@
-﻿<h2>Contacts({{selectedTabIndex}}):</h2>
-<div style="width: 20%; float:left">
+﻿<div style="width: 20%; float:left">
     <li *ngFor="let contact of contacts">
         <a (click)="setSelectedContact(contact)">
-            <span>{{contact.firstName}}</span>
+            {{contact.firstName}}
         </a>
     </li>
 </div>
 
 <div style="width: 80%; float:right">
     <mat-tab-group>
-        <mat-tab label="General" (selectedIndexChange)="selectedTabChanged">
-            Contact first name: {{selectedContact.firstName}}
-            Contact last name: {{selectedContact.lastName}}
+        <mat-tab label="General">
+            Contact first name: {{selectedContact?.firstName}}
+            Contact last name: {{selectedContact?.lastName}}
         </mat-tab>
         <mat-tab label="Notes">Notes</mat-tab>
     </mat-tab-group>

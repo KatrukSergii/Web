@@ -13,10 +13,8 @@ export class ContactComponent implements OnInit
 {
     contacts: Contact[] = [];
     selectedContact: Contact;
-    selectedTabIndex: number;
     constructor(private contactService: ContactService)
     {
-        this.selectedTabIndex = 1;
     }
 
     setSelectedContact(contact: Contact) : void
@@ -28,9 +26,5 @@ export class ContactComponent implements OnInit
     {
         this.contactService.GetContacts().subscribe(response => { this.contacts = response; });
         this.selectedContact = this.contacts[0];
-    }
-    selectedTabChanged(index: number): void
-    {
-        this.selectedTabIndex = index;
     }
 }
