@@ -1,0 +1,13 @@
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\RepositoryProvider.dll
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\RepositoryProvider.pdb
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\Models.dll
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\NoSqlRepository.dll
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\Repository.dll
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\Models.pdb
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\NoSqlRepository.pdb
+C:\GitHub\Web\WebApi\RepositoryProvider\bin\Debug\Repository.pdb
+C:\GitHub\Web\WebApi\RepositoryProvider\obj\Debug\RepositoryProvider.csprojResolveAssemblyReference.cache
+C:\GitHub\Web\WebApi\RepositoryProvider\obj\Debug\RepositoryProvider.csproj.CoreCompileInputs.cache
+C:\GitHub\Web\WebApi\RepositoryProvider\obj\Debug\RepositoryProvider.csproj.CopyComplete
+C:\GitHub\Web\WebApi\RepositoryProvider\obj\Debug\RepositoryProvider.dll
+C:\GitHub\Web\WebApi\RepositoryProvider\obj\Debug\RepositoryProvider.pdb

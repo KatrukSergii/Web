@@ -1,0 +1,9 @@
+C:\GitHub\Web\WebApi\Repository\bin\Debug\Repository.dll
+C:\GitHub\Web\WebApi\Repository\bin\Debug\Repository.pdb
+C:\GitHub\Web\WebApi\Repository\bin\Debug\Models.dll
+C:\GitHub\Web\WebApi\Repository\bin\Debug\Models.pdb
+C:\GitHub\Web\WebApi\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+C:\GitHub\Web\WebApi\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\GitHub\Web\WebApi\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\GitHub\Web\WebApi\Repository\obj\Debug\Repository.dll
+C:\GitHub\Web\WebApi\Repository\obj\Debug\Repository.pdb

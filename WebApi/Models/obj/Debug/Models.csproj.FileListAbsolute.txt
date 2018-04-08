@@ -1,0 +1,11 @@
+C:\GitHub\Web\AngularTest\Models\bin\Debug\Models.dll
+C:\GitHub\Web\AngularTest\Models\bin\Debug\Models.pdb
+C:\GitHub\Web\AngularTest\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\GitHub\Web\AngularTest\Models\obj\Debug\Models.dll
+C:\GitHub\Web\AngularTest\Models\obj\Debug\Models.pdb
+C:\GitHub\Web\WebApi\Models\bin\Debug\Models.dll
+C:\GitHub\Web\WebApi\Models\bin\Debug\Models.pdb
+C:\GitHub\Web\WebApi\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\GitHub\Web\WebApi\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\GitHub\Web\WebApi\Models\obj\Debug\Models.dll
+C:\GitHub\Web\WebApi\Models\obj\Debug\Models.pdb
