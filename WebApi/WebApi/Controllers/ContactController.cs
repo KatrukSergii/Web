@@ -19,7 +19,7 @@ namespace AngularTest.Controllers
 
         // GET: api/Contract/5
         [HttpGet("{id}", Name = "Get")]
-        public Contact Get(string id)
+        public Contact Get(int id)
         {
             return this.repository.ContactRepository.GetById(id);
         }
@@ -40,7 +40,7 @@ namespace AngularTest.Controllers
         
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(string id)
+        public void Delete(int id)
         {
             this.repository.ContactRepository.Remove(id);
         }

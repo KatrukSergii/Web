@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Models;
 
 namespace Repository.Interfaces
 {
@@ -12,16 +11,16 @@ namespace Repository.Interfaces
 
         List<T> Get(int from, int to);
 
-        T GetById(string id);
+        T GetById(int id);
 
         void Insert(T itemToInsert);
 
-        void Remove(string id);
+        void Remove(int id);
 
         void Remove(T itemToRemove);
 
         void Save(T itemToSave);
 
-        void Add(Contact itemToAdd);
+        void Add(T itemToAdd);
     }
 }

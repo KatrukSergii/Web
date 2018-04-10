@@ -44,6 +44,9 @@
     <Compile Include="Contract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ContractContactLink.cs" />
+    <Compile Include="Rent\Publication.cs" />
+    <Compile Include="Rent\PublicationRequest.cs" />
+    <Compile Include="Rent\RentalObject.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

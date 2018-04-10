@@ -1,34 +1,35 @@
 ﻿using System.Collections.Generic;
 using Models;
+using Models.Rent;
 using Repository.Interfaces;
 
 namespace NoSqlRepository.Repositories
 {
-    public class ContactRepository : IRepository<Contact>
+    internal class RentalObjectRepositroy : IRepository<RentalObject>
     {
         public int Count => throw new System.NotImplementedException();
 
-        public void Add(Contact itemToAdd)
+        public void Add(RentalObject itemToAdd)
         {
             throw new System.NotImplementedException();
         }
 
-        public List<Contact> Get(int from, int to)
+        public List<RentalObject> Get(int from, int to)
         {
-            return new List<Contact>
+            return new List<RentalObject>
             {
-                new Contact { FirstName = "First1", LastName = "Last1" },
-                new Contact { FirstName = "First2", LastName = "Last3" },
-                new Contact { FirstName = "First3", LastName = "Last3" }
+                new RentalObject{Id = 1, Code = "001", Area = 111},
+                new RentalObject{Id = 2, Code = "002", Area = 222},
+                new RentalObject{Id = 3, Code = "003", Area = 333}
             };
         }
 
-        public Contact GetById(int id)
+        public RentalObject GetById(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Insert(Contact itemToInsert)
+        public void Insert(RentalObject itemToInsert)
         {
             throw new System.NotImplementedException();
         }
@@ -38,12 +39,12 @@ namespace NoSqlRepository.Repositories
             throw new System.NotImplementedException();
         }
 
-        public void Remove(Contact itemToRemove)
+        public void Remove(RentalObject itemToRemove)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Save(Contact itemToSave)
+        public void Save(RentalObject itemToSave)
         {
             throw new System.NotImplementedException();
         }
