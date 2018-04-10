@@ -11,9 +11,13 @@
 
   <ItemGroup>
     <None Remove="src\app\core\models\contact.ts" />
+    <None Remove="src\app\core\models\publication.ts" />
+    <None Remove="src\app\core\models\PublicationRequest.ts" />
+    <None Remove="src\app\core\models\RentalObject.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="src\app\components\admin\" />
     <Folder Include="src\app\core\pipes\" />
     <Folder Include="src\app\Models\" />
     <Folder Include="wwwroot\" />
@@ -32,6 +36,9 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="src\app\core\models\contact.ts" />
+    <TypeScriptCompile Include="src\app\core\models\publication.ts" />
+    <TypeScriptCompile Include="src\app\core\models\PublicationRequest.ts" />
+    <TypeScriptCompile Include="src\app\core\models\RentalObject.ts" />
   </ItemGroup>
 
 </Project>

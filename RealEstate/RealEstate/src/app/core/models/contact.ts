@@ -1,8 +1,8 @@
 ﻿export class Contact
 {
-    id: string;
-    firstName: string;
-    lastName: string;
-    birthDate: Date;
-    code: string;
+    Id: string;
+    FirstName: string;
+    LastName: string;
+    BirthDate: Date;
+    Code: string;
 }

@@ -17,6 +17,9 @@ import { routing } from './app.router';
 import { HomeService } from "./core/services/home.service";
 import { ContactService } from './core/services/contact.service';
 import { ContractService } from './core/services/contract.service';
+import { publicationitemComponent } from './components/customer/publication/publicationitem/publicationitem.component';
+import { PublicationdetailsComponent } from './components/customer/publication/publicationdetails/publicationdetails.component';
+import { publicationlistComponent } from './components/customer/publication/publicationlist/publicationlist.component';
 
 @NgModule({
     imports: [
@@ -37,7 +40,10 @@ import { ContractService } from './core/services/contract.service';
         HomeComponent,
         ContractComponent,
         ContactComponent,
-        AppComponent
+        AppComponent,
+        publicationitemComponent,
+        PublicationdetailsComponent,
+        publicationlistComponent
     ],
     providers: [
         HomeService,
