@@ -18,7 +18,7 @@ namespace AngularTest.Controllers
         }
 
         // GET: api/Contract/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public Contact Get(int id)
         {
             return this.repository.ContactRepository.GetById(id);

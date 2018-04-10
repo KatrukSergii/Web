@@ -18,7 +18,7 @@ namespace WebApi.Controllers
         }
 
         // GET: api/Publications/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}")]
         public Publication Get(int id)
         {
             return this.repository.PublicationRepository.GetById(id);
