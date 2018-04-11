@@ -20,6 +20,9 @@ import { ContractService } from './core/services/contract.service';
 import { publicationitemComponent } from './components/customer/publication/publicationitem/publicationitem.component';
 import { PublicationdetailsComponent } from './components/customer/publication/publicationdetails/publicationdetails.component';
 import { publicationlistComponent } from './components/customer/publication/publicationlist/publicationlist.component';
+import { PublicationsService } from './core/services/publications.service';
+import { RentalObjectService } from './core/services/RentalObjectservice';
+import { PublicationRequestService } from './core/services/PublicationRequest.service';
 
 @NgModule({
     imports: [
@@ -48,7 +51,10 @@ import { publicationlistComponent } from './components/customer/publication/publ
     providers: [
         HomeService,
         ContactService, 
-        ContractService
+		ContractService,
+		PublicationsService,
+		RentalObjectService,
+		PublicationRequestService
     ],
     bootstrap: [AppComponent]
  })

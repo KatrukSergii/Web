@@ -1,1 +1,8 @@
-﻿<div style="border: 1px solid red">publicationdetails Component</div>
+﻿<div style="border: 2px solid red">
+	<div>Publication id: {{Publication.id}}</div>
+	<div>Rental object id: {{Publication.rentalObjectId}}</div>
+	<div>
+		Rental object code:{{Publication?.code}}
+	</div>
+	<div *ngFor='let message of messages'> {{message}} </div>
+</div>

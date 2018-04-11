@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "webpack": "webpack --progress",
-    "serve": "webpack-dev-server --host localhost --port 8080 --inline --progress",
+    "serve": "webpack-dev-server --host localhost --port 8082 --inline --progress",
     "compile": "tsc --rootDir src --outDir wwwroot",
     "delete": "del wwwroot\\*.* /q /s",
     "distro": "npm run compile && npm run webpack"
