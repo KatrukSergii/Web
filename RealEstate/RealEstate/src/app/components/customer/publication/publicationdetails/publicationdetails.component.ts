@@ -1,7 +1,7 @@
 ﻿import { Component, Input } from '@angular/core';
 import { Publication } from '../../../../core/models/publication';
 import { RentalObjectService } from '../../../../core/services/rentalObject.service';
-import { RentalObject } from '../../../../core/models/RentalObject';
+import { RentalObject } from '../../../../core/models/rentalObject';
 import { retry } from 'rxjs/operator/retry';
 
 @Component({
