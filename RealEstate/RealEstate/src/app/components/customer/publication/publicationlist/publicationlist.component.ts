@@ -4,15 +4,14 @@ import { Publication } from '../../../../core/models/publication';
 
 @Component({
     selector: 'app-publicationlist',
-    templateUrl: './publicationlist.component.html'
-    //, styleUrls: ['./publicationlist.component.scss']
+	templateUrl: './publicationlist.component.html'
 })
 export class publicationlistComponent implements OnInit
 {
-    Publications: Publication[];
+	Publications: Publication[];
+	CurrentPublication: Publication = new Publication(1,1,null);
     constructor(private publicationService: PublicationsService)
     {
-
     }
 
     ngOnInit(): void
