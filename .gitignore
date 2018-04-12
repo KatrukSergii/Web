@@ -19,3 +19,4 @@
 /WebApi/RepositoryProvider/obj
 /WebApi/WebApi/obj
 /WebApi/WebApi/bin
+*.log
