@@ -35,10 +35,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="src\app\core\models\Contact.ts" />
-    <TypeScriptCompile Include="src\app\core\models\Publication.ts" />
-    <TypeScriptCompile Include="src\app\core\models\PublicationRequest.ts" />
-    <TypeScriptCompile Include="src\app\core\models\RentalObject.ts" />
+    <TypeScriptCompile Include="src\app\core\models\contact.ts" />
+    <TypeScriptCompile Include="src\app\core\models\publication.ts" />
+    <TypeScriptCompile Include="src\app\core\models\publicationRequest.ts" />
+    <TypeScriptCompile Include="src\app\core\models\rentalObject.ts" />
   </ItemGroup>
 
 </Project>

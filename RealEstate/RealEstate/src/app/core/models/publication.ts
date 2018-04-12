@@ -1,10 +1,10 @@
 ﻿export class Publication
 {
     constructor(
-        public Id: number,
-        public RentalObjectId: number,
-        public FromDate: Date,
-        public ToDate?: Date)
+        public id: number,
+        public rentalObjectId: number,
+        public fromDate: Date,
+        public toDate?: Date)
     {
     }
 }

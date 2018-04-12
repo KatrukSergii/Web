@@ -1,12 +1,13 @@
 ﻿
 export class PublicationRequest
 {
-    constructor(public RequestDate : Date,
-        public PublicationId: number,
-        public FromDate?: Date,
-        public DateTime?: Date,
-        public ContactEmail?: string,
-        public ContactPhone?: string)
+    constructor(
+        public requestDate: Date,
+        public publicationId: number,
+        public fromDate?: Date,
+        public dateTime?: Date,
+        public contactEmail?: string,
+        public contactPhone?: string)
     {
     }
 }

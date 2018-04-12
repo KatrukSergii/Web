@@ -1,8 +1,8 @@
-﻿<div style="border: 2px solid red">
-	<div>Publication id: {{Publication.id}}</div>
-	<div>Rental object id: {{Publication.rentalObjectId}}</div>
-	<div>
-		Rental object code:{{Publication?.code}}
-	</div>
+﻿<div style="border: 2px solid green">
+    <div>Publication id: {{CurrentPublication.id}}</div>
+    <div>Rental object id: {{CurrentPublication.rentalObjectId}}</div>
+    <div>
+        Rental object code:{{CurrentRentalObject?.code}}
+    </div>
 	<div *ngFor='let message of messages'> {{message}} </div>
 </div>

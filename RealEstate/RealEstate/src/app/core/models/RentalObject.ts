@@ -1,9 +1,10 @@
-﻿export class RentalObject
+﻿
+export class RentalObject
 {
     constructor(
-        public Id: number,
-        public Code: string,
-        public Area: number)
+        public id: number,
+        public code: string,
+        public area: number)
     {
     }
 }
