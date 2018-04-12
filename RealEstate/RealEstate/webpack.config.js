@@ -3,6 +3,7 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var helpers = require('./helpers');
+//var cssFile = require('./src/app/styles.css');
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/main.ts'),
@@ -25,10 +26,7 @@ module.exports = {
             { test: /\.html$/, loaders: 'html-loader' },
             {
                 test: /\.(css|scss)$/,
-                loaders: ['to-string-loader'].concat(ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ['css-loader', 'raw-loader']
-                }))
+                loaders: ['to-string-loader', 'css-loader', 'sass-loader']
             }
         ]
     },
@@ -36,16 +34,9 @@ module.exports = {
         extensions: ['*', '.js', '.ts', '.html', '.css', '.scss']
     },
     plugins: [
-        new webpack.LoaderOptionsPlugin({
-            vue: {
-                loaders: {
-                    scss: 'style!css!sass'
-                }
-            }
-        }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        }),
-        new ExtractTextPlugin('./src/styles.css')
+        })
+        //, new ExtractTextPlugin('./[name].css' )
     ]
 };

@@ -21,8 +21,8 @@ import { publicationitemComponent } from './components/customer/publication/publ
 import { PublicationdetailsComponent } from './components/customer/publication/publicationdetails/publicationdetails.component';
 import { publicationlistComponent } from './components/customer/publication/publicationlist/publicationlist.component';
 import { PublicationsService } from './core/services/publications.service';
-import { RentalObjectService } from './core/services/RentalObjectservice';
-import { PublicationRequestService } from './core/services/PublicationRequest.service';
+import { RentalObjectService } from './core/services/rentalObject.service';
+import { PublicationRequestService } from './core/services/publicationRequest.service';
 
 @NgModule({
     imports: [

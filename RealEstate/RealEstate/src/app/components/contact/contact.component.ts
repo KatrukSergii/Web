@@ -19,13 +19,13 @@ export class ContactComponent implements OnInit
     set birthDate(value: Date)
     {
         if (this.selectedContact != null)
-            this.selectedContact.BirthDate = value;
+            this.selectedContact.birthDate = value;
 
     }
     get birthDate()
     {
         if(this.selectedContact != null)
-            return this.selectedContact.BirthDate;
+            return this.selectedContact.birthDate;
         return this.date
     }
     constructor(private contactService: ContactService)
