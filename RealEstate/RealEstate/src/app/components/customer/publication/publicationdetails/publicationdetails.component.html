@@ -1,8 +1,22 @@
-﻿<div style="border: 2px solid green">
+﻿<div style="border: 20px solid green">
     <div class="intro">Publication id: {{CurrentPublication.id}}</div>
-    <div>Rental object id: {{CurrentPublication.rentalObjectId}}</div>
-    <div>
-        Rental object code:{{CurrentRentalObject?.code}}
-    </div>
-	<div *ngFor='let message of messages'> {{message}} </div>
+    <mat-tab-group>
+        <mat-tab label="General">
+            <div>
+                Rental object id: {{CurrentPublication.rentalObjectId}}
+            </div>
+            <div>
+                Rental object code:{{CurrentRentalObject.code}}
+            </div>
+            <div>
+                Rental object area:{{CurrentRentalObject.area}}
+            </div>
+        </mat-tab>
+        <mat-tab label="Notes">
+            <textarea required ng-model="notes" rows="4" cols="50"></textarea>
+        </mat-tab>
+        <mat-tab label="Logs">
+            <div *ngFor='let message of messages'> {{message}} </div>
+        </mat-tab>
+    </mat-tab-group>
 </div>

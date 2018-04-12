@@ -14,7 +14,8 @@ export class PublicationdetailsComponent
 {	
 	currentPubl: Publication;
 	CurrentRentalObject: RentalObject;
-	messages: string[] = [];
+    messages: string[] = [];
+    notes: string;
     @Input() set CurrentPublication(pub: Publication)
     {
         this.currentPubl = pub;

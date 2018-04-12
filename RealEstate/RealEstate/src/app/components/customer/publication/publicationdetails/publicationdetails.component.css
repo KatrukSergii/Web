@@ -1,3 +1,11 @@
 ﻿.intro {
     background-color: yellow;
 }
+
+textarea.ng-invalid {
+    background-color: pink;
+}
+
+textarea.ng-valid {
+    background-color: lightgreen;
+}
